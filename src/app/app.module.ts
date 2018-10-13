@@ -10,6 +10,8 @@ import { HeaderComponent } from './header/header.component';
 import { HeaderModule } from './header/header.module';
 import { SharedModule } from './shared/shared.module';
 import { YourMusicComponent } from './your-music/your-music.component';
+import { MusicCardModule } from './shared/music-card/music-card.module';
+import { MusicCardComponent } from './shared/music-card/music-card.component';
 
 
 @NgModule({
@@ -17,13 +19,15 @@ import { YourMusicComponent } from './your-music/your-music.component';
     AppComponent,
     BrowseComponent,
     HeaderComponent,
-    YourMusicComponent
+    YourMusicComponent,
+    MusicCardComponent
   ],
   imports: [    
     AppRoutingModule,
     BrowserAnimationsModule,
     HeaderModule,
-    SharedModule 
+    SharedModule,
+    MusicCardModule 
   ],
   providers: [],
   bootstrap: [AppComponent]

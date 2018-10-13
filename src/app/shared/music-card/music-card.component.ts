@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MusicCardComponent implements OnInit {
 
+  titles = ['Coffee break', 'Rainy day', 'Party night', 'Sunset', 'Relax at the beach', 'Punk'];
+  
   constructor() { }
 
   ngOnInit() {
