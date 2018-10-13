@@ -9,13 +9,15 @@ import { BrowseComponent } from './browse/browse.component';
 import { HeaderComponent } from './header/header.component';
 import { HeaderModule } from './header/header.module';
 import { SharedModule } from './shared/shared.module';
+import { YourMusicComponent } from './your-music/your-music.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     BrowseComponent,
-    HeaderComponent
+    HeaderComponent,
+    YourMusicComponent
   ],
   imports: [    
     AppRoutingModule,
