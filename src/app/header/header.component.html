@@ -1,8 +1,11 @@
 <div class="container" fxLayoutAlign="space-between center">
   
-  <div class="logo"  fxLayout="row" fxLayoutAlign="space-around center">
-    <p>Browse</p>
-    <p>Your Music</p>
+  <div  fxLayout="row" fxLayoutAlign="space-around center">
+    <img class="logo" src="../../assets/logo-spotify.png">
+    <div class="links">
+      <a routerLink=''>Browse</a>
+      <a routerLink='/your-music'>Your Music</a>
+    </div>    
   </div>
   
 
@@ -16,6 +19,8 @@
     <button mat-icon-button>
       <fa-icon [icon]="search"></fa-icon>
     </button>
+
+    <img class="profile-pic" src="../../assets/profile-pic.jpg" alt="Avatar">
   </div>
   
   
