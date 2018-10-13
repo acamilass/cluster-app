@@ -5,6 +5,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { MatCardModule } from '@angular/material/card';
 
 
 @NgModule({
@@ -13,14 +14,16 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MatInputModule,
     MatButtonModule,
     FontAwesomeModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    MatCardModule
   ],
   exports: [
     CommonModule,
     MatInputModule,
     MatButtonModule,
     FontAwesomeModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    MatCardModule
   ],
   declarations: []
 })

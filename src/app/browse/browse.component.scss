@@ -6,3 +6,15 @@
 // @import '~compass-mixins/lib/compass/css3';
 // @include filter-gradient(#1f3935, #294b49, horizontal); // IE6-9 fallback on horizontal gradient
 // @include background-image(linear-gradient(left top, rgba(31,57,53,1) 0%,rgba(79,142,140,1) 42%,rgba(79,142,140,1) 45%,rgba(79,142,140,1) 50%,rgba(79,142,140,1) 50%,rgba(79,142,140,1) 53%,rgba(79,142,140,1) 60%,rgba(41,75,73,1) 100%));
+
+.container {
+    background-color: #294b49;
+
+    .example-card {
+        max-width: 100px;
+
+            .icon {
+                font-size: 50px;
+            }
+    }
+}

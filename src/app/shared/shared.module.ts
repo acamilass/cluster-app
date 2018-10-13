@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { MaterialModule } from './material/material.module';
+import { MusicCardComponent } from './music-card/music-card.component';
 
 @NgModule({
   imports: [
@@ -11,6 +12,6 @@ import { MaterialModule } from './material/material.module';
   exports: [
     MaterialModule
   ],
-  declarations: []
+  declarations: [MusicCardComponent]
 })
 export class SharedModule { }
