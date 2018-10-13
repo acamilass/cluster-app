@@ -1,15 +1,22 @@
-<div class="container">
-  <h3>Browse</h3>
-  <h3>Your Music</h3>
-
-  <form class="example-form">
-    <mat-form-field class="example-full-width">
-      <input matInput placeholder="Favorite food">
-    </mat-form-field>
-  </form>
+<div class="container" fxLayoutAlign="space-between center">
   
-  <button mat-icon-button>
-    <fa-icon [icon]="search"></fa-icon>
-  </button>
+  <div class="logo"  fxLayout="row" fxLayoutAlign="space-around center">
+    <p>Browse</p>
+    <p>Your Music</p>
+  </div>
+  
+
+  <div class="music-search"  fxLayout="row" fxLayoutAlign="end center">
+    <form>
+      <mat-form-field>
+        <input matInput placeholder="Search music">
+      </mat-form-field>
+    </form>
+    
+    <button mat-icon-button>
+      <fa-icon [icon]="search"></fa-icon>
+    </button>
+  </div>
+  
   
 </div>
