@@ -8,6 +8,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowseComponent } from './browse/browse.component';
 import { HeaderComponent } from './header/header.component';
 import { HeaderModule } from './header/header.module';
+import { SharedModule } from './shared/shared.module';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { HeaderModule } from './header/header.module';
   imports: [    
     AppRoutingModule,
     BrowserAnimationsModule,
-    HeaderModule 
+    HeaderModule,
+    SharedModule 
   ],
   providers: [],
   bootstrap: [AppComponent]
