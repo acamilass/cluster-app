@@ -1,5 +1,5 @@
 .container {
-    color: #17D662;
+    color: #b1afaf;
     font-family: 'Montserrat', sans-serif;
     padding-top: 10px;
 
@@ -12,12 +12,21 @@
     .links a {
       margin-right: 20px;
       text-decoration: none;
+      color: #b1afaf;
+      font-weight: 600;
+    }
+
+    .links a:hover {
       color: #17D662;
     }
 
     .music-search {
-      color: gray;
+      color: #b1afaf;
       margin-right: 30px;
+
+      fa-icon {
+        font-size: 14px;
+      }
     }
 
     .profile-pic {

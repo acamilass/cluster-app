@@ -1,9 +1,27 @@
 .container {
     color: #FFF;
     font-family: 'Montserrat', sans-serif;
-    padding-bottom: 40px;
+    padding-bottom: 357px;
 
     h3 {
         margin-left: 30px;
+    }
+}
+
+.music-card {
+    font-family: 'Montserrat', sans-serif;
+    width: 100px;
+    height: 100px;
+    margin-left: 30px;  
+    color: #FFF;  
+
+    background-color: #000;
+
+    .icon {
+        font-size: 50px;
+        width: 60px;
+        max-height: 48px;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 }

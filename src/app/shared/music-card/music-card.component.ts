@@ -16,8 +16,7 @@ export class MusicCardComponent implements OnInit {
     { icon: '../../../assets/icons/moon-solid.svg', title: 'Party night', image: '../../../assets/party-night.jpg' },
     { icon: '../../../assets/icons/sun-solid.svg', title: 'Sunset', image: '../../../assets/sunset.jpg' },
     { icon: '../../../assets/icons/umbrella-beach-solid.svg', title: 'Beach fever', image: '../../../assets/beach.jpg' },
-    { icon: '../../../assets/icons/drum-solid.svg', title: 'Punk', image: '../../../assets/punk.jpg' },
-    { icon: '../../../assets/icons/bed-solid.svg', title: 'Sleep time', image: '../../../assets/sleep.jpg' },
+    { icon: '../../../assets/icons/drum-solid.svg', title: 'Punk', image: '../../../assets/punk.jpg' }
   ];
    
   constructor() { }
@@ -29,7 +28,12 @@ export class MusicCardComponent implements OnInit {
         $(".music-card").css("opacity", 1);
         $(this).css("opacity", 0.3);
       })
-      
+      // $(".music-card").mouseover(function(){
+      //   $(this).css("border-style", "none");
+      //   $(".music-card").css("border", "solid #FFF");
+        
+      // })
+            
     })
 
   }
