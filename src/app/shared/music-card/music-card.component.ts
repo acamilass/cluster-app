@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { faCoffee, faUmbrella, faMoon, faSun, faUmbrellaBeach, faDrum } from '@fortawesome/free-solid-svg-icons';
+// import { faCoffee, faUmbrella, faMoon, faSun, faUmbrellaBeach, faDrum } from '@fortawesome/free-solid-svg-icons';
+
+import * as $ from 'jquery';
 
 @Component({
   selector: 'app-music-card',
@@ -21,6 +23,15 @@ export class MusicCardComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+
+    $(document).ready(function(){
+      $(".music-card").mouseover(function(){
+        $(".music-card").css("opacity", 1);
+        $(this).css("opacity", 0.3);
+      })
+      
+    })
+
   }
 
 }
