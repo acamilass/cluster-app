@@ -6,7 +6,7 @@ import { YourMusicComponent } from './your-music/your-music.component';
 const routes: Routes = [
 
   {
-    path: '',
+    path: 'browse',
     component: BrowseComponent
   },
 

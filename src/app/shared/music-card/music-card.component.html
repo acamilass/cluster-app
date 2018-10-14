@@ -1,9 +1,8 @@
 <div class="card" fxLayout="row" fxLayoutAlign="start center">
     <mat-card *ngFor="let card of cards" class="example-card">
-      <mat-card-content fxLayout="column" fxLayoutAlign="space-around center">
-        <!-- <fa-icon class="icon" icon="{{ card.icon }}"></fa-icon> -->
-        <p> {{ card.icon }} </p>
-        <p>{{ card.title }}</p>
+      <mat-card-content fxLayout="column" fxLayoutAlign="space-around center">        
+        <img class="icon" src="{{ card.icon }}">    
+        <h4>{{ card.title }}</h4>
       </mat-card-content>    
     </mat-card>
   </div>
