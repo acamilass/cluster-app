@@ -6,6 +6,11 @@ import { YourMusicComponent } from './your-music/your-music.component';
 const routes: Routes = [
 
   {
+    path: '',
+    component: BrowseComponent
+  },
+  
+  {
     path: 'browse',
     component: BrowseComponent
   },
