@@ -2,5 +2,10 @@
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
 body {
-    background-color: #294b49;
-}
+    // background-color: #294b49;
+    background: rgb(31,57,53); /* Old browsers */
+    background: -moz-linear-gradient(-45deg, rgba(31,57,53,1) 0%, rgba(79,142,140,1) 42%, rgba(79,142,140,1) 45%, rgba(79,142,140,1) 50%, rgba(79,142,140,1) 50%, rgba(79,142,140,1) 53%, rgba(79,142,140,1) 60%, rgba(41,75,73,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, rgba(31,57,53,1) 0%,rgba(79,142,140,1) 42%,rgba(79,142,140,1) 45%,rgba(79,142,140,1) 50%,rgba(79,142,140,1) 50%,rgba(79,142,140,1) 53%,rgba(79,142,140,1) 60%,rgba(41,75,73,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, rgba(31,57,53,1) 0%,rgba(79,142,140,1) 42%,rgba(79,142,140,1) 45%,rgba(79,142,140,1) 50%,rgba(79,142,140,1) 50%,rgba(79,142,140,1) 53%,rgba(79,142,140,1) 60%,rgba(41,75,73,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f3935', endColorstr='#294b49',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}   
