@@ -1,17 +1,6 @@
 <div class="container">
-    <h3>YOUR MUSIC</h3>
-    <div class="card" fxLayout="row" fxLayoutAlign="start center">
-
-        <mat-card *ngFor="let card of cards" class="music-card" [ngStyle]="{'background-image':'url('+card.image+')'}">
-          
-          <mat-card-content fxLayout="column" fxLayoutAlign="space-around center">        
-            
-            <img class="icon" src="{{ card.icon }}">    
-            <h4>{{ card.title }}</h4>
-          
-          </mat-card-content>   
-    
-        </mat-card>
-        
-      </div>
-  </div>
+  <h3>YOUR MUSIC</h3>
+  <div fxLayout="row" fxLayoutAlign="start center">
+    <app-music-card *ngFor="let card of cards" [cardIcon]="card.icon" [cardTitle]="card.title" [cardImage]="card.image"></app-music-card>
+  </div>  
+</div>
