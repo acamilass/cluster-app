@@ -17,7 +17,7 @@ export class MusicCardComponent implements OnInit {
   ngOnInit() {
 
     jQuery(document).ready(function($){
-      $('.fdw-background').hover(
+      $('.dark-background').hover(
         function () {
           $(this).animate({opacity:'0.2'});
         },
