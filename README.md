@@ -36,10 +36,7 @@ Através do terminal clone o projeto
 Na pasta cluster-app baixe os pacotes
 >> npm install
 
-Agora execute o comando, para efetuar o deploy de produção
->>  ng build
-
-Para executar localmente e testar a build de produção, use o seguinte comando
->> ng serve
+Para executar localmente use o seguinte comando
+>> npm start
 
 Agora você pode testar a sua aplicação através do endereço [http://localhost:4200](http://localhost:4200)
