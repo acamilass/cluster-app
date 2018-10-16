@@ -12,7 +12,7 @@
   <div class="music-search"  fxLayout="row" fxLayoutAlign="end center">
     <form>
       <mat-form-field>
-        <input matInput autocomplete="off" placeholder="Search music">
+        <input matInput autocomplete="off" placeholder="Search music" (search)="onSearch($event)">
       </mat-form-field>
     </form>
     

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-your-music',
@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class YourMusicComponent implements OnInit {
 
+  @Output() search = new EventEmitter();
+
   cards = [
     { icon: '../../../assets/icons/bed-solid.svg', title: 'Sleep time', image: '../../../assets/sleep.jpg' }
   ];
@@ -14,5 +16,9 @@ export class YourMusicComponent implements OnInit {
   constructor() { }
 
   ngOnInit() { }
+
+  public filterCards() {
+    this.search.emit({ res: this.cards.filter});
+  }
 
 }

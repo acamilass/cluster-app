@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-browse',
@@ -6,6 +6,8 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./browse.component.scss']
 })
 export class BrowseComponent implements OnInit {
+
+  @Output() search = new EventEmitter();
 
   cards = [
     { icon: '../../../assets/icons/coffee-solid.svg', title: 'Coffee break', image: '../../../assets/coffee-break.jpg' },
@@ -19,6 +21,10 @@ export class BrowseComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+  }
+
+  public filterCards() {
+    this.search.emit({ res: this.cards.filter});
   }
 
 }
