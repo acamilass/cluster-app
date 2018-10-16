@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 
-import * as $ from 'jquery';
-
 @Component({
   selector: 'app-your-music',
   templateUrl: './your-music.component.html',
@@ -15,15 +13,6 @@ export class YourMusicComponent implements OnInit {
  
   constructor() { }
 
-  ngOnInit() {
-
-    $(document).ready(function(){
-      $(".music-card").mouseover(function(){
-        $(".music-card").css("opacity", 1);
-        $(this).css("opacity", 0.3);
-      })            
-    })
-
-  }
+  ngOnInit() { }
 
 }

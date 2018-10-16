@@ -16,19 +16,17 @@ export class MusicCardComponent implements OnInit {
 
   ngOnInit() {
 
-    $(document).ready(function(){
-      $(".music-card").mouseover(function(){
-        $(".music-card").css("opacity", 1);
-        $(this).css("opacity", 0.3);
-      })
-      // $(".music-card").mouseover(function(){
-      //   $(this).css("border-style", "none");
-      //   $(".music-card").css("border", "solid #FFF");
-        
-      // })
-            
-    })
-
+    jQuery(document).ready(function($){
+      $('.fdw-background').hover(
+        function () {
+          $(this).animate({opacity:'0.2'});
+        },
+        function () {
+          $(this).animate({opacity:'0.9'});
+        }
+      ); 
+    });
+    
   }
 
 }

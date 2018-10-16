@@ -1,14 +1,16 @@
 <div class="card" fxLayout="row" fxLayoutAlign="start center">
 
-    <mat-card class="music-card" [ngStyle]="{'background-image':'url('+cardImage+')'}">
+  <mat-card class="music-card" [ngStyle]="{'background-image':'url('+cardImage+')'}">
       
-      <mat-card-content fxLayout="column" fxLayoutAlign="space-around center">        
-        
-        <img class="icon" src="{{ cardIcon }}">    
-        <h4>{{ cardTitle }}</h4>
-      
-      </mat-card-content>   
+    <mat-card-content fxLayout="column" fxLayoutAlign="space-around center">       
+         
+      <img class="icon" src="{{ cardIcon }}">    
+      <h4>{{ cardTitle }}</h4>
 
-    </mat-card>
+      <div style="opacity: 0.9;" class="fdw-background"></div> 
+      
+    </mat-card-content>  
+      
+  </mat-card>
     
   </div>
