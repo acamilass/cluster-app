@@ -1,27 +1,45 @@
-# ClusterApp
+# Cluster Music App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.4.
+O teste consiste em criar uma aplicação web com navegação simples (com base em aplicações do Spotify), sem consumir APIs.
 
-## Development server
+Comportamento esperado:
+- Ao carregar a página pela primeira vez, irá para a aba "Browse";
+- Ao clicar em 'Your Music', irá para uma segunda página 'Your Music';
+- O search deverá funcionar para que sejam filtrados os 'cards' conforme digitado;
+- Ao carregar a página com algum 'caminho' definido, deverá ir para a página correta;
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+### Metodologia 
+> **Padrão:** Angular
 
-## Code scaffolding
+> **Frameworks:** Angular, Angular Material
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+> **Instalação de pacotes:** npm install
 
-## Build
+> **Desenvolvedor:** Ana Camila Santos Sousa
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+>  **Método de Desenvolvimento:**  A estrutura do projeto foi criada com a ferramenta [angular-cli](https://github.com/angular/angular-cli). Para o front end foi utilizado o framework [Angular Material](https://material.angular.io/). Foi utilizada também a biblioteca [jQuery](https://jquery.com/) para aplicação de efeitos. Para hospedar a página na web foi usado o [Firebase](https://firebase.google.com/?hl=pt-br).
+ 
+### Link do projeto
+O projeto também foi hospedado na web usando o Firebase para uma visualização mais rápida. 
+>> https://cluster-music-app.firebaseapp.com/
 
-## Running unit tests
+### Deploy do projeto
+O projeto também pode ser clonado através do seu repositório e assim ser visualizado localmente.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+**Requisitos:** A ferramenta Node deve estar instalada
 
-## Running end-to-end tests
+##### Passos
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Através do terminal clone o projeto
+>> git clone https://github.com/acamilass/cluster-app.git
 
-## Further help
+Na pasta cluster-app baixe os pacotes
+>> npm install
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Agora execute o comando, para efetuar o deploy de produção
+>>  ng build
+
+Para executar localmente e testar a build de produção, use o seguinte comando
+>> ng serve
+
+Agora você pode testar a sua aplicação através do endereço [http://localhost:4200](http://localhost:4200)
